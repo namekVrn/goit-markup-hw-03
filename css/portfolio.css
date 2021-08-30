@@ -41,37 +41,34 @@ a.bg {
 }
 /* Конец - дополнительные классы */
 
-/* Открываю header */
 header{
-    height: 80px;
     border-bottom: 1px solid #EEEEEE;
 }
 .header-page{
     display: flex;
     align-items: center;
-    height: 80px;
-    border-bottom: 1px solid #EEEEEE;
 }
-.logo{
-    margin-right: 93px;
-}
+
 .logo-link{
     color: var(--style-color);
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: 3%;
-    font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
 }
 .logo-text{
     color: var( --second-color);
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 .list-link {
     color: var(--second-color);
     font-size: 14px;
     font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 .list-link:hover{
     color: var(--style-color);
@@ -79,6 +76,8 @@ header{
 
 .header-link{
     display: flex;
+    margin: 0;
+    padding: 0;
     margin-left: auto;
 }
 .header-tel {
@@ -107,8 +106,12 @@ header{
     padding: 0px;
 }
 .list > li{
-    margin: 25px;
+    margin-right: 50px;
 }
+.list > li:last-child{
+    margin-right: 0px;
+}
+/* Конец header */
 /* Конец header */
 
 
@@ -124,8 +127,10 @@ header{
     justify-content: center;
 }
 .filter-list > li {
-    margin: 10px;
-    height: 38px;
+    margin-right: 8px;
+}
+.filter-list > li:last-child{
+    margin-right: 0px;
 }
 .filter-box{
     display: flex;
@@ -161,6 +166,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
+    margin: 0px;
     
 }
 .page-topbox{
@@ -210,11 +216,13 @@ header{
 footer{
     background: var(--footer-bg);
 }
-.logo-footer{
-   padding-top: 60px;
+.position-footer{
+    padding-top: 60px;
+}
+.reset-margin{
+    margin: 0;
 }
 .address-footer{
-    padding-top: 20px;
     padding-bottom: 60px;
     font-size: 14px;
     font-weight: 400;
@@ -228,22 +236,22 @@ footer{
 .address-footer p{
     font-style: normal;
     margin: 0px;
-    margin-top: 20px;
+    padding-top: 20px;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 24px;
 }
 .address-footer  a {
-    margin-top: 9px;
+    padding-top: 9px;
     color: #fff;
     opacity: 60%;
     font-style: normal;
 }
 .footer-link{
-    margin-top: 9px;
-    display: flex;
-    flex-direction: column;
+    padding-top: 9px;
+    display: inline-block;
+    
 }
 .footer-mail, .footer-tel{
     display: block;
@@ -251,7 +259,6 @@ footer{
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 20px;
     line-height: 24px;;
 }
 /* Закрываю footer */
