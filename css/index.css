@@ -117,11 +117,11 @@ header{
     background-repeat: no-repeat;
 }
 .icon-mail::before {
-    background-image: url(/images/icon/envelope.svg);
+    background-image: url(../images/icon/envelope.svg);
     background-repeat: no-repeat;
 }
 .icon-sm::before {
-    background-image: url(/images/icon/smartphone.svg);
+    background-image: url(../images/icon/smartphone.svg);
     background-repeat: no-repeat;
 }
 
@@ -148,7 +148,7 @@ header{
         padding-bottom: 200px;
         background: var(--footer-bg);
         text-align: center;
-        background-image:linear-gradient(to right, rgba(47,48,58, 40%),rgba(47,48,58, 40%)), url(/images/bg-her.jpg);
+        background-image:linear-gradient(to right, rgba(47,48,58, 40%),rgba(47,48,58, 40%)), url(../images/bg-her.jpg);
         background-size: cover;
         background-position: center;
         
