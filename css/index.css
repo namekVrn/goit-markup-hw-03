@@ -11,6 +11,9 @@ body{
     padding: 0;
     margin: 0;
 }
+img{
+    display: block;
+}
 *{
 box-sizing: border-box;
 }
@@ -86,13 +89,15 @@ header{
     font-weight: 500;
     margin-right: 0px;
 }
+.header-link > li:first-child{
+    margin-right: 50px;
+}
 .header-mail{
     display: block;
     color: var(--ferst-color);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    margin-right: 50px;
 }
 .header-mail:hover, .header-tel:hover{
     color: var(--style-color);
@@ -139,9 +144,16 @@ header{
        background: #1b7ac7;
     }
     .advantages-hidden{
-        visibility: hidden;
-        margin: 0;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
         padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
     .advantages-section{
         padding-top: 94px;
@@ -239,7 +251,7 @@ header{
         color:var(--second-color);
         text-align: center;
         margin: 0px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     .image-box > img {
         display: block;
@@ -264,19 +276,19 @@ header{
 /* Открываю footer */
 footer{
     background: var(--footer-bg);
-}
-.position-footer{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .reset-margin{
     margin: 0;
 }
 .address-footer{
-    padding-bottom: 60px;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 24px;
+    margin-top: 20px;
 }
 
 .ft-color{
@@ -285,21 +297,22 @@ footer{
 .address-footer p{
     font-style: normal;
     margin: 0px;
-    padding-top: 20px;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 24px;
 }
 .address-footer  a {
-    padding-top: 9px;
+    margin-top: 9px;
     color: #fff;
     opacity: 60%;
     font-style: normal;
 }
 .footer-link{
-    padding-top: 9px;
+    padding: 0;
+    margin:0;
     display: inline-block;
+    margin-bottom: 0;
     
 }
 .footer-mail, .footer-tel{

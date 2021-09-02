@@ -157,17 +157,15 @@ header{
 .action-link:hover{
     color:#fff;
     background:var(--style-color);
+    cursor:pointer;
 }
+
 .page-cards{
+    margin: 0px;
     margin-top: 50px;
-    
-}
-.page-cards ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    margin: 0px;
-    
 }
 .page-topbox{
     padding-top: 20px;
@@ -193,18 +191,20 @@ header{
     margin-bottom: 0px;
 }
 .page-title{
+    margin: 0px;
+    padding: 0px;
     color: var(--second-color);
     font-size: 18px;
     font-weight: bold;
     line-height: 36px;
-    margin: 0px;
+    margin-top: 4px;
 }
 .page-text{
+    margin: 0px;
     color: var(--ferst-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    margin: 0px;
 }
 .filter > h1{
     display: none;
@@ -215,19 +215,19 @@ header{
 /* Открываю footer */
 footer{
     background: var(--footer-bg);
-}
-.position-footer{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .reset-margin{
     margin: 0;
 }
 .address-footer{
-    padding-bottom: 60px;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 24px;
+    margin-top: 20px;
 }
 
 .ft-color{
@@ -236,21 +236,22 @@ footer{
 .address-footer p{
     font-style: normal;
     margin: 0px;
-    padding-top: 20px;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 24px;
 }
 .address-footer  a {
-    padding-top: 9px;
+    margin-top: 9px;
     color: #fff;
     opacity: 60%;
     font-style: normal;
 }
 .footer-link{
-    padding-top: 9px;
+    padding: 0;
+    margin:0;
     display: inline-block;
+    margin-bottom: 0;
     
 }
 .footer-mail, .footer-tel{
