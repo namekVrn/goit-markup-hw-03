@@ -91,6 +91,7 @@ header{
 }
 .header-link > li:first-child{
     margin-right: 50px;
+    
 }
 .header-mail{
     display: block;
@@ -99,12 +100,37 @@ header{
     font-size: 14px;
     font-weight: 500;
 }
+.right-link{
+    display: inline-flex;
+}
+.right-link::before
+{
+    content:"";
+    width: 16px;
+    height: 12px;
+    background-position: center;
+    background-size: contain;
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+.icon-mail::before {
+    background-image: url(/images/icon/envelope.svg);
+    background-repeat: no-repeat;
+}
+.icon-sm::before {
+    background-image: url(/images/icon/smartphone.svg);
+    background-repeat: no-repeat;
+}
+
 .header-mail:hover, .header-tel:hover{
     color: var(--style-color);
 }
 .list{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     margin: 0px;
     padding: 0px;
 }
@@ -121,7 +147,11 @@ header{
         padding-top: 200px;
         padding-bottom: 200px;
         background: var(--footer-bg);
-       text-align: center;
+        text-align: center;
+        background-image:linear-gradient(to right, rgba(47,48,58, 40%),rgba(47,48,58, 40%)), url(/images/bg-her.jpg);
+        background-size: cover;
+        background-position: center;
+        
     }
     .bussines-title{
         font-size: 44px;
@@ -274,6 +304,7 @@ header{
 /* конец main */
 
 /* Открываю footer */
+/* Открываю footer */
 footer{
     background: var(--footer-bg);
     padding-top: 60px;
@@ -303,7 +334,6 @@ footer{
     line-height: 24px;
 }
 .address-footer  a {
-    margin-top: 9px;
     color: #fff;
     opacity: 60%;
     font-style: normal;
@@ -313,8 +343,12 @@ footer{
     margin:0;
     display: inline-block;
     margin-bottom: 0;
-    
+    margin-top: 9px;
 }
+.footer-link > li:last-child{
+    margin-top: 9px;
+}
+
 .footer-mail, .footer-tel{
     display: block;
     color: var(--ferst-color);
